@@ -42,9 +42,9 @@ public class ConwayTest {
 	@Test
 	public void centeredCellWithTwoNeigboursIn3x3returnsSingleCenteredCellIn3x3() {
 		String universe[] = {
-				"X X",
+				"X  ",
 				" X ",
-				"   "};
+				"  X"};
 		String expected[] = {
 				"   ",
 				" X ",
