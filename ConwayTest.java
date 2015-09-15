@@ -24,7 +24,7 @@ public class ConwayTest {
 	}
 
 	@Test
-	public void singleCenteredCellIn3x3Dies() {
+	public void singleCenteredCellIn3x3returnsEmpty3x3() {
 		String universe[] = {
 				"   ",
 				" X ",
@@ -40,11 +40,11 @@ public class ConwayTest {
 	}
 
 	@Test
-	public void centeredCellWithTwoNeigboursIn3x3Survives() {
+	public void centeredCellWithTwoNeigboursIn3x3returnsSingleCenteredCellIn3x3() {
 		String universe[] = {
-				"X  ",
+				"X X",
 				" X ",
-				"  X"};
+				"   "};
 		String expected[] = {
 				"   ",
 				" X ",
